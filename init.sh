@@ -7,10 +7,10 @@
 sudo yum install golang
 
 # put these in ~/.bash_profile
+# GOROOT must be set only if go was installed in another location and not `/usr/local/go`
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
-export GOBIN="$HOME/go/bin"
-export GOPATH="$HOME/go/src"
-export GOROOT="/usr/local"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
 
 ### Set up PostgreSQL
 
